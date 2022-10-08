@@ -1,0 +1,23 @@
+.navigation_slider{
+    margin: 0 auto;
+}
+
+.bx-wrapper{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.bx-vieport{
+    width: 100%;
+    overflow: visible;
+    opacity: unset;
+    width: 620px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(43, 41, 45, 0.5);
+}
