@@ -81,6 +81,10 @@
     margin-top: 15px;
 }
 
+.header_nav{
+    margin-left: 176px;
+}
+
 .header_li{
     width: 82px;
     box-sizing: border-box;
@@ -188,7 +192,7 @@
 .outdoor_text{
     font-family: 'Roboto';
     font-size: 17px;
-    line-height: 26px;
+    line-height: 25px;
     color: #CACCD1;
     max-width: 495px;
     letter-spacing: 1px;
@@ -197,6 +201,7 @@
 .about_container{
     max-width: 1440px;
     text-align: left;
+    padding-right: 50px;
 }
 
 .about > .about_img{
@@ -237,7 +242,7 @@
 }
 
 .promis{
-    background-color: rgba(87, 84, 69, 0.09);
+    background: url(../img/Frame\ \(3\).png);
     padding: 100px 0;
 }
 
@@ -269,17 +274,6 @@
     line-height: 20px;
 }
 
-.grid_decor-top{
-    position: absolute;
-    top: -287px;
-    right: 0;
-}
-
-.grid_decor-bottom{
-    position: absolute;
-    bottom: -102px;
-    left: -177px;
-}
 
 .store{
     padding: 100px 0;
@@ -502,7 +496,7 @@
 }
 
 .magazine{
-    padding: 20px 0 100px;
+    padding: 20px 0 80px;
 }
 
 .magazine_content{
@@ -564,7 +558,7 @@
 }
 
 .input{
-    width: 458px;
+    width: 438px;
     height: 53px;
     box-sizing: border-box;
     background: #F9FAFB;
@@ -593,9 +587,10 @@
 
 .rights{
     margin-top: 31px;
+    padding: 0 30px;
 }
 
-.img_icon:not(:last-of-type){
+.img_icon-link:not(:last-of-type){
     margin-right: 20px;
 }
 
@@ -684,16 +679,16 @@
         margin-right: 17px;
     }
 
+    .outdoor_content{
+        top: 154px;
+    }
+
     .grid_decor-top{
         right: -81px;
     }
 
     .navigation_container{
-        padding: 200px;
-    }
-
-    .navigation_container{
-        padding: 0 245px;
+        padding: 0 237px;
     }
 
     .magazine{
@@ -701,7 +696,7 @@
     }
 
     .magazine_img{
-        max-width: 543px;
+        max-width: 500px;
     }
 
     .footer{
@@ -782,23 +777,21 @@
 
     }
 
+    .outdoor_content{
+        top: 93px;
+    }
+
+    .about{
+        padding-right: 70px;
+    }
+
     .about_img{
-        max-width: 665px;
+        max-width: 550px;
     }
 
     .promis_grid{
         gap: 50px;
         margin-top: 80px;
-    }
-    .grid_decor-top{
-        max-width: 327px;
-        right: -163px;
-        top: -283px;
-    }
-
-    .grid_decor-bottom {
-        max-width: 400px;
-        bottom: -98px;
     }
 
     .store_grid-title{
@@ -815,7 +808,7 @@
     }
 
     .navigation_container{
-        padding: 0 100px;
+        padding: 0 97px;
     }
 
     .magazine_img{
@@ -851,7 +844,7 @@
     }
 
     .button_input{
-        right: 42%;
+        right: 45%;
     }
 
     .icons{
@@ -860,6 +853,10 @@
 
     .img_rights{
         max-width: 600px;
+    }
+
+    #up{
+        bottom: 100px;
     }
 
 }
@@ -875,7 +872,7 @@
 
     .outdoor_content{
         margin-left: 0;
-        top: 85px;
+        top: 50px;
         left: 17px;
     }
 
@@ -902,21 +899,27 @@
         gap: 30px;
     }
 
-    .grid_decor-top {
-        right: -146px;
-        top: -315px;
-    }
-
-    .grid_decor-bottom {
-        bottom: -66px;
-    }
-
     .store{
         padding: 60px 0;
     }
 
+    .checkout_nav{
+        max-width: 500px;
+        bottom: 211px;
+        right: 196px;
+        padding: 10px 20px;
+    }
+
+    .checkout_li:nth-child(2){
+        display: none;
+    }
+
     .shop{
-        padding: 30px 0;
+        padding: 85px 0;
+    }
+
+    .navigation_container{
+        padding: 0 61px;
     }
 
     .magazine_container{
@@ -946,7 +949,7 @@
     }
 
     .button_input {
-        right: 63px;
+        right: 75px;
     }
 
     .rights{
@@ -955,7 +958,27 @@
     }
 
     .img_rights{
+        max-width: 480px;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .checkout_nav{
+        bottom: 174px;
+        right: 115px;
+    }
+
+    .shop{
+        padding: 110px 0;
+    }
+
+    .navigation_container {
+        padding: 0 45px;
+    }
+
+    #up{
+        bottom: 80px;
     }
 }
 
@@ -974,18 +997,30 @@
         left: 25px;
     }
 
+    .outdoor_pretitle{
+        line-height: 18px;
+    }
+
     .outdoor_title{
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 23px;
     }
 
     .outdoor_text{
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .about{
+        padding-right: 0;
+    }
+
+    .about_container{
+        padding-right: 0;
     }
 
     .about_img{
-        max-width: 530px;
+        max-width: 510px;
     }
 
     .promis_grid{
@@ -993,11 +1028,6 @@
         grid-template-rows: repeat(3, 1fr);
         gap: 90px;
         margin-top: 40px;
-    }
-
-    .grid_decor-top {
-        right: -47px;
-        top: -280px;
     }
 
     .store_grid{
@@ -1014,10 +1044,11 @@
         border-radius: 16px;
         padding: 12px 17px;
         right: 26px;
+        bottom: 148px;
     }
 
     .shop{
-        padding: 95px 0;
+        padding: 100px 0;
     }
 
     .shop_title{
@@ -1026,6 +1057,10 @@
 
     .navigation {
         padding: 53px 0 6px;
+    }
+
+    .navigation_container{
+        padding: 0 51px;
     }
 
     .magazine_img{
@@ -1045,7 +1080,11 @@
     }
 
     .img_rights {
-        max-width: 480px;
+        max-width: 440px;
+    }
+
+    #up{
+        bottom: 55px;
     }
 }
 
@@ -1062,18 +1101,24 @@
         top: 15px;
     }
 
+    .outdoor_pretitle{
+        line-height: 13px;
+    }
+
     .pretitle {
         font-size: 12px;
         line-height: 18px;
     }
 
     .outdoor_title {
-        font-size: 32px;
-        line-height: 27px;
+        font-size: 24px;
+        line-height: 20px;
     }
 
     .outdoor_text{
         max-width: 270px;
+        font-size: 11px;
+        line-height: 16px;
     }
 
     .about {
@@ -1097,6 +1142,10 @@
         margin-top: 10px;
     }
 
+    .navigation_container{
+        padding: 0 33px;
+    }
+
     .promis {
         padding: 50px 0;
     }
@@ -1105,26 +1154,15 @@
         gap: 70px;
     }
 
-    .grid_decor-top {
-        max-width: 214px;
-        right: -68px;
-        top: -260px;
-    }
-
-    .grid_decor-bottom {
-        max-width: 327px;
-        bottom: -49px;
-    }
-
     .store {
         padding: 30px 0;
     }
 
     .checkout_nav {
-        max-width: 340px;
+        max-width: 241px;
         max-height: 21px;
         padding: 10px;
-        bottom: 10px;
+        bottom: 15px;
     }
 
     .checkout_li {
@@ -1135,6 +1173,10 @@
         font-size: 8px;
         line-height: 9px;
         margin-left: 0; 
+    }
+
+    .shop{
+        padding: 120px 0;
     }
 
     .navigation {
@@ -1183,13 +1225,17 @@
     }
 
     .input {
-        width: 340px;
+        width: 330px;
         height: 53px;
     }
 
     .button_input {
         top: 13%;
         right: 20px;
+    }
+
+    .img_rights{
+        max-width: 320px;
     }
 
     .img_icon { 
@@ -1211,6 +1257,10 @@
     .circle {
         width: 45px;
         height: 45px;
+    }
+
+    #up{
+        bottom: 50%;
     }
 }
 
@@ -1251,12 +1301,6 @@
         margin-bottom: 3px;
     }
 
-    .grid_decor-top {
-        max-width: 170px;
-        right: -30px;
-        top: -172px;
-    }
-
     .promis_grid {
         gap: 33px;
     }
@@ -1264,7 +1308,7 @@
     .checkout_nav {
         max-width: 243px;
         max-height: 17px;
-        bottom: 114px;
+        bottom: 100px;
         right: 131px;
         padding: 6px;
     }
@@ -1278,11 +1322,11 @@
     }
 
     .shop {
-        padding: 123px 0;
+        padding: 150px 0;
     }
 
     .navigation_container {
-        padding: 0 40px;
+        padding: 0 28px;
     }
 
     .magazine{
@@ -1302,15 +1346,16 @@
     }
 
     .input {
-        max-width: 292px;
+        max-width: 290px;
     }
 
     .img_rights {
-        max-width: 287px;
+        max-width: 260px;
     }
 
     #up{
         right: 19px;
+        bottom: 30px;
     }
 }
 
@@ -1348,14 +1393,6 @@
         padding: 20px 0;
     }
 
-    .grid_decor-top{
-        right: -11px;
-    }
-
-    .grid_decor-bottom{
-        bottom: -20px;
-    }
-
     .store {
         padding: 22px 0;
     }
@@ -1383,7 +1420,11 @@
     }
 
     .shop {
-        padding: 164px 0;
+        padding: 175px 0;
+    }
+
+    .navigation_container {
+        padding: 0 22px;
     }
 
     .magazine {

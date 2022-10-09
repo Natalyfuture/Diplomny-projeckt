@@ -9,9 +9,6 @@
 }
 
 .bx-vieport{
-    width: 100%;
-    overflow: visible;
-    opacity: unset;
     width: 620px;
 }
 
