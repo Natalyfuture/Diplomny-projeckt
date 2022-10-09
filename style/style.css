@@ -148,7 +148,7 @@
     background-color:   white;
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 18px;
 }
 
 .img_basket{
@@ -274,7 +274,6 @@
     line-height: 20px;
 }
 
-
 .store{
     padding: 100px 0;
 }
@@ -307,7 +306,8 @@
 
 .store_grid-content{
     position: absolute;
-    background-color: rgba(87, 84, 69, 0.8);
+    background: linear-gradient(45deg,rgba(87, 84, 69, 1),rgba(87, 84, 69, 0));
+    /* background-color: rgba(87, 84, 69, 0.8); */
     border-radius: 10px;
     top: 0;
     left: 0;
@@ -325,28 +325,35 @@
 
 .store_grid-title{
     font-family: 'Roboto';
-    font-size: 28px;
+    font-size: 36px;
     line-height: 34px;
+    text-align: center;
     margin: 40px 0 8px;
     color: #FFFFFF;
+    text-shadow:  rgb(87, 84, 69) 5px 5px 5px;
 }
 
 .store_grid-text{
-    font-size: 16px;
+    max-width: 300px;
+    font-size: 20px;
     line-height: 22px;
+    margin: 0 auto;
     margin-bottom: 20px;
     color: #FFFFFF;
+    text-shadow:  rgb(87, 84, 69) 5px 5px 5px;
 }
 
 .read_more{
-    max-width: 134px;
+    max-width: 175px;
     text-align: center;
     margin: 0 auto;
 }
 
 .store_link{
     text-decoration: none;
+    font-size: 18px;
     color: #FFFFFF;
+    text-shadow:  rgb(87, 84, 69) 5px 5px 5px;
 }
 
 .all_categories{
@@ -732,6 +739,14 @@
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 12px;
+    }
+
+    .button_curt{
+        margin-left: 0;
+    }
+
+    .square{
+        right: 30px;
     }
 
     .menu_hamb{
@@ -1271,10 +1286,6 @@
 
     .hamb_nav{
         top: 56px;
-    }
-
-    .square{
-        right: 20px;
     }
 
     .outdoor_content {
