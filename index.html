@@ -23,34 +23,34 @@
                         <div class="check"></div>
                         <div class="check"></div>
                     </div>
-            <nav class="hamb_nav">
-                <ul class="menu_hamb">
-                    <li class="hamb_li">
-                        <a href="" class="hamb_link">Shop</a>
-                    </li>
-                    <li class="hamb_li">
-                        <a href="" class="hamb_link"">About us</a>
-                    </li>
-                    <li class="hamb_li">
-                        <a href="" class="hamb_link"">Our team</a>
-                    </li>
-                    <li class="hamb_li">
-                        <a href="" class="hamb_link"">Buyer's guides</a>
-                    </li>
-                    <li class="hamb_li">
-                        <a href="" class="hamb_link"k">Categories</a>
-                    </li>
-                </ul>
-                <div class="hamb_buttons">
-                    <button class="button button_buy hamb_button-buy">Buy template</button>
-                    <div class="button_curt-wrapper">
-                        <button class="button button_curt hamb_button-buy">Cart</button>
-                        <div class="square"></div>
-                        <img class="img_basket" src="./img/header/basket.png" alt="basket">
+                <nav class="hamb_nav">
+                    <ul class="menu_hamb">
+                        <li class="hamb_li">
+                            <a href="" class="hamb_link">Shop</a>
+                        </li>
+                        <li class="hamb_li">
+                            <a href="" class="hamb_link"">About us</a>
+                        </li>
+                        <li class="hamb_li">
+                            <a href="" class="hamb_link"">Our team</a>
+                        </li>
+                        <li class="hamb_li">
+                            <a href="" class="hamb_link"">Buyer's guides</a>
+                        </li>
+                        <li class="hamb_li">
+                            <a href="" class="hamb_link"k">Categories</a>
+                        </li>
+                    </ul>
+                    <div class="hamb_buttons">
+                            <button class="button button_buy hamb_button-buy">Buy template</button>
+                        <div class="button_curt-wrapper">
+                            <button class="button button_curt hamb_button-buy">Cart</button>
+                            <div class="square"></div>
+                            <img class="img_basket" src="./img/header/basket.png" alt="basket">
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
             <img  class="logotype" src="./img/header/Logotype.png" alt="Logo">
             <nav class="header_nav flex">
                 <ul class="flex">
@@ -82,14 +82,15 @@
         </div>
         </div>
     </header>
-    <section class="outdoor">
-        <div class="img outdoor_img">
-                <img class="img" src="./img/background.png" alt="background">
-            <div class="container outdoor_content">
-                <h3 class="outdoor_pretitle pretitle">OUTDOOR EXPLORATION</h3>
-                <h1 class="outdoor_title">Gear for when it actually matters.</h1>
-                <p class="outdoor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-            </div>
+    <section class="outdoor_container outdoor_background">
+        <div class="container">
+            <!-- <div class="outdoor_container"> -->
+                <div class="outdoor_content">
+                    <h3 class="outdoor_pretitle pretitle">OUTDOOR EXPLORATION</h3>
+                    <h1 class="outdoor_title">Gear for when it actually matters.</h1>
+                    <p class="outdoor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                </div>
+            <!-- </div> -->
         </div>
     </section>
     <section class="about">
@@ -302,8 +303,7 @@
         </div>
     </section>
     <section class="checkout">
-        <img class="checkout_img" src="./img/checkout/sea.png" alt="sea">
-        <div class="checkout_nav">
+        <div class="container checkout_nav">
             <nav class="flex">
                 <ul class="checkout_ul flex">
                     <li class="checkout_li flex">
@@ -330,7 +330,7 @@
     </section>
     <section class="shop">
         <div class="shop_img">
-            <img class="img" src="./img/checkout/sea_decor.png" alt="">
+            <img class="img" src="./img/shop/Combined-Shape (5).png" alt="">
             <div class="container">
                 <div class="shop_content">
                     <h3 class="shop_pretitle">Shop</h3>
@@ -482,8 +482,10 @@
                         <h3 class="pretitle feedback_pretitle">Newsletter</h3>
                         <p class="text footer_text">Subscribe to our (infrequent) newsletter where we share news about upcoming listings and projects.</p>
                         <div class="input_relative">
-                            <input type="email" class="input" placeholder="Email">
-                            <button class="button button_input">Submit</button>
+                            <form action="" method="post">
+                                <input type="email" class="input" placeholder="Email" maxlength="20">
+                                <button class="button button_input">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -512,6 +514,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="./script/modal.js"></script>
     <script src="./script/upButtons.js"></script>
     <script src="./script/bxslider.js"></script>

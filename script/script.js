@@ -1,0 +1,1 @@
+$('.shop').parallax({imageSrc: '../img/shop/Combined-Shape (5).png', speed: 0.01});
