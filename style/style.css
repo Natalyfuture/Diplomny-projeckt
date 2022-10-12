@@ -60,7 +60,7 @@
 .hamb_nav{
     padding: 50px;
     position: fixed;
-    top: 50px;
+    top: 78px;
     z-index: 10;
     display: flex;
     flex-flow: column;
@@ -262,7 +262,7 @@
 }
 
 .promis{
-    background: url(../img/Frame\ \(3\).png);
+    background: url(../img/promis_grid/promis_background.png);
     padding: 100px 0;
 }
 
@@ -311,12 +311,12 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 20px;
+    justify-items: center;
 }
 
 .store_grid-item{
     max-width: 379px;
     position: relative;
-    justify-content: center;
 }
 
 .store_grid-img{

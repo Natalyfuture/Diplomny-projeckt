@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/slider.css">
+    <link rel="stylesheet" href="./wow/animate.css">
 </head>
 <body>
     <header class="header">
@@ -303,7 +304,7 @@
         </div>
     </section>
     <section class="checkout">
-        <div class="container checkout_nav">
+            <div class="container checkout_nav wow swing">
             <nav class="flex">
                 <ul class="checkout_ul flex">
                     <li class="checkout_li flex">
@@ -518,5 +519,9 @@
     <script src="./script/modal.js"></script>
     <script src="./script/upButtons.js"></script>
     <script src="./script/bxslider.js"></script>
+    <script src="./wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
