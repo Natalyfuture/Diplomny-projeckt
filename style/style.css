@@ -415,16 +415,16 @@
 }
 
 .shop_img{
-    position: relative;
-    z-index: 0;
+    position: relative; 
+    z-index: 0; 
 }
 
 .shop_content{
    position: absolute;
     margin: 0 auto;
     z-index: 2;
-    top: 50%;
-    left: 50%;
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
     
 }
@@ -462,12 +462,48 @@
     text-align: center;
     color: #575445;
     margin-top: 30px;
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
 }
 
 .button_white:hover{
+    background-color: #575445;
+    filter: brightness(1.5);
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+    
+
+.button_white::before, .button_white::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    top: 0;
+    background:  #FFFFFF;
+    filter: blur(40px);
+    transform: skewX(-30deg);
+}
+
+
+.button_white:hover::before, .button_white:focus::before{
     font-weight: bold;
     border: 3px solid #575445;
     cursor: pointer;
+    left: calc(100% + 150px);
+    transition: 1s;
+    
+}
+
+.button_white:hover::after, .button_white:focus::after{
+    font-weight: bold;
+    border: 3px solid #575445;
+    cursor: pointer;
+    left: calc(100% + 150px);
+    transition: 1s 0.5s;
 }
 
 .navigation{
@@ -868,6 +904,10 @@
     .checkout_nav{
         max-width: 395px;
         margin-left: 450px;
+    }
+
+    .shop{
+        padding: 65px 0;
     }
 
     .navigation_container{
@@ -1441,7 +1481,7 @@
 
     .shop {
         padding: 150px 0;
-    }
+    } 
 
     .navigation_container {
         padding: 0 28px;
