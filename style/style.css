@@ -1230,6 +1230,10 @@
         padding: 15px 0 13px;
     }
 
+    .hamb_nav{
+        top: 72px;
+    }
+
     .outdoor_container{
         max-width: 480px;
     }
@@ -1402,10 +1406,6 @@
 @media screen and (max-width: 360px) {
     .container{
         max-width: 300px;
-    }
-
-    .hamb_nav{
-        top: 56px;
     }
 
     .outdoor_container{
