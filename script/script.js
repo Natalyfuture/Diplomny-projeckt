@@ -1,3 +1,11 @@
+$(window).on('scroll', function(){
+    if($(this).scrollTop() > 50){$('.checkbox:checked ~ .hamb_nav').fadeOut();
+    }
+    else{
+        $('.checkbox:checked ~ .hamb_nav').fadeIn();
+    }
+})
+
 $('#shop_link').on('click', function(e){
     e.preventDefault();
     $('html, body').animate({scrollTop: $('#shop').offset().top}, 1000);
